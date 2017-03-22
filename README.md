@@ -9,8 +9,8 @@ The following examples demonstrate the usage of the library. For further example
 ### Server
 
 ```csharp
- var server = new SocketServer();
- server.AddTcpListener(8181);
+var server = new SocketServer();
+server.AddTcpListener(8181);
 
 server.Messages.Subscribe(m =>
 {
@@ -18,7 +18,7 @@ server.Messages.Subscribe(m =>
    Console.WriteLine("Received message {0}", message);
 });
 
- server.Start();
+server.Start();
 ```
 ### Client
 
